@@ -1,0 +1,11 @@
+Course course1 = new Course("Computing", "G400");
+Student student3 = new Student("Hemani Singh", "16453456");
+student3.enroloncourse(course1);
+Student student2 = new Student("Ruby Spring", "21345345");
+Course course1 = new Course("Computing", "G400");
+student2.enroloncourse(course1);
+student2.print();
+Ruby Spring, student ID: 21345345, credits: 0
+Course:Computingcredits:G400
+course1.print();
+Course:Computingcredits:G400
