@@ -1,0 +1,45 @@
+Ticket - High WycombePrice:220Issued,Sun Oct 25 23:22:17 GMT 2020
+Ticket ticket1 = new Ticket("High wycombe", 220);
+ticket1.getDestination()
+    returned String "High wycombe"
+ticket1.getPrice()
+    returned int 220
+ticket1.print();
+ Ticket - High wycombePrice:220Issued,Sun Oct 25 23:29:57 GMT 2020
+coin.values()
+    returned Object <object reference>
+TicketMachine ticketMa1 = new TicketMachine(220);
+ticketMa1.selectAmershamTicket();
+Ticket ticket1 = new Ticket("High Wycombe", 220);
+Ticket ticket2 = new Ticket("Aylesbury", 300);
+Ticket ticket3 = new Ticket("Amersham", 330);
+ticket1.getDestination()
+    returned String "High Wycombe"
+ticket1.getPrice()
+    returned int 220
+ticket1.print();
+ Ticket - High WycombePrice:220Issued,Wed Oct 28 02:08:40 GMT 2020
+TicketMachine ticketMa2 = new TicketMachine(220);
+ticketMa2.selectAmershamTicket();
+ticketMa2.insert100();
+Amount Entered
+Current balance = 100
+ticketMa2.getBalance()
+    returned int 100
+ticketMa2.printTicket();
+You must insert at least: 200 more cents.
+ticketMa2.insert200();
+Amount Entered
+Current balance = 300
+ticketMa1.insert100();
+Amount Entered
+Current balance = 300
+ticketMa1.insert200();
+Amount Entered
+Current balance = 500
+ticketMa1.printTicket();
+ticketMa1.refundBalance()
+    returned int 200
+
+
+
