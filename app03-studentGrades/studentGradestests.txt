@@ -1,0 +1,30 @@
+Student student1 = new Student("Rudy Gobert", "22132495");
+Course course = new Course("C0111", "Computing");
+student1.enrolOnCourse(course);
+Module module1 = new Module("Programming Concepts", "CO452");
+Module module2 = new Module("Web Development", "CO456");
+Module module3 = new Module("Digital Technologies", "C0452");
+Module module4 = new Module("Computer Architecture", "CO450");
+module1.awardMark(25);
+module2.awardMark(25);
+module3.awardMark(25);
+module4.awardMark(25);
+course.addModules(module1);
+course.addModules(module2);
+course.addModules(module3);
+course.addModules(module4);
+module1.print();
+Module: CO452 Programming Concepts Mark = 25
+module2.print();
+Module: CO456 Web Development Mark = 25
+module3.print();
+Module: C0452 Digital Technologies Mark = 25
+module4.print();
+Module: CO450 Computer Architecture Mark = 25
+course.print();
+Course  -  CodeNo: C0111, Title:Computing
+course.printmodules();
+Module: CO452 Programming Concepts Mark = 25
+Module: CO456 Web Development Mark = 25
+Module: C0452 Digital Technologies Mark = 25
+Module: CO450 Computer Architecture Mark = 25

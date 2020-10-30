@@ -1,44 +1,49 @@
+import java.util.*;
 
 /**
  * This class stores information about a course
- * that enrolled students may want to complete
  *
- * @author Derek Peacock
- * @version 0.1 11/Sep/2020
+ * @author Eman Limbu
+ * @version 0.1 29/10/2020
  */
 public class Course
 {
-    // instance variables - replace the example below with your own
+    // Variables
     private String codeNo;
     private String title;
-
-    private Module module1;
-    private Module module2;
-    private Module module3;
-    private Module module4;
+    
+    //Array varaible of module
+    private ArrayList<Module> modules;
+    
     
     private int finalMark;
         
-    private Grades finalGrade;
+    
         
     /**
      * Constructor for objects of class Course
      */
     public Course(String codeNo, String title)
     {
-        // initialise instance variables
+        
         this.codeNo = codeNo;
         this.title = title;
         
-        module1 = new Module("Programming Concepts", "CO452");
-        //todo add the others
+        //modules is stored in array
+        modules = new ArrayList<Module>();
+        
     }
-
+    
+    public void addModules(Module newModule)
+    {
+       modules.add(newModule);
+    }
+    
     public void addMark(int mark, int moduleNo)
     {
-        if(moduleNo == 1)
+         if(moduleNo == 1)
         {
-            module1.awardMark(mark);
+            
         }
     }
     
@@ -47,17 +52,17 @@ public class Course
      */
     public void print()
     {
-        // put your code here
-        System.out.println("Course " + codeNo + " - " + title);
+         System.out.println("Course " + " - " + " CodeNo: " + codeNo + ", Title:" + title);
     }
     
-    public Grades convertToGrade(int mark)
-    {
-        if((mark >= 0) && (mark < 40))
+    /**
+     * This method prints out the module that is added to the course
+     */
+    public void printmodules()
+    { 
+        for(Module module: modules)
         {
-            return Grades.F;
+            module.print();
         }
-        
-        return Grades.X;
-    }
+    } 
 }

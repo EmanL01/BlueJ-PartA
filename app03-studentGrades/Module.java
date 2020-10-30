@@ -1,15 +1,19 @@
 
 /**
- * Write a description of class Module here.
+ * The information about modules is held in this class
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Eman Limbu
+ * @version 29/10/2020
  */
 public class Module
 {
+    //Varaibles
+    
     private String title;
     
     private String codeNo;
+    
+    private Course coures;
     
     private int mark;
     
@@ -21,8 +25,12 @@ public class Module
         mark = 0;
         this.title = title;
         this.codeNo = codeNo;
+
     }
     
+    /**
+     * Awards mark to the module 
+     */
     public void awardMark(int mark)
     {
         if((mark >= 0) && (mark <= 100))
@@ -35,6 +43,9 @@ public class Module
         }
     }
     
+    /**
+     * Printing method for the module
+     */
     public void print()
     {
         System.out.println("Module: " + codeNo +
