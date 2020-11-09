@@ -79,7 +79,7 @@ public class Product
     }
     
     /**
-     * 
+     * This is the sell product method 
      */
     public void sellOne()
     {
