@@ -1,8 +1,8 @@
 /**
  * Model some details of a product sold by a company.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Eman Limbu.
+ * @version 09/11/2020
  */
 public class Product
 {
@@ -12,6 +12,7 @@ public class Product
     private String name;
     // The quantity of this product in stock.
     private int quantity;
+    
 
     /**
      * Constructor for objects of class Product.
@@ -57,7 +58,7 @@ public class Product
     {
         return id + ": " +  name + " stock level: " + quantity;
     }
-
+  
     /**
      * Restock with the given amount of this product.
      * The current quantity is incremented by the given amount.
@@ -76,18 +77,19 @@ public class Product
                                " with a non-positive amount: " + amount);
         }
     }
-
+    
     /**
-     * Sell one of these products.
-     * An error is reported if there appears to be no stock.
+     * 
      */
     public void sellOne()
     {
-        if(quantity > 0) 
+        if(quantity > 0)
         {
             quantity--;
+            System.out.println(
+              "Purchase has been succesfull: " + name);
         }
-        else 
+        else
         {
             System.out.println(
                 "Attempt to sell an out of stock item: " + name);

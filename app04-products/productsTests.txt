@@ -1,0 +1,61 @@
+Product product1 = new Product(101, "Samsung Galaxy S20");
+Product product2 = new Product(102, "Apple iphone 12");
+Product product3 = new Product(103, "Google Pixel 4A");
+Product product4 = new Product(104, "Apple Ipad Air");
+Product product5 = new Product(105, "Amazon Fire HD 10");
+Product product6 = new Product(106, "Lenovo Yoga Smart Tab");
+Product product7 = new Product(107 , "Onyx Book Note 2 ");
+Product product8 = new Product(108 , "ACER ACTAB1021 10");
+Product product9 = new Product(109 , "LENOVO TAB M8");
+Product product10 = new Product(110, "ALLdoucube iplay 7T");
+StockManager stockMan = new StockManager();
+stockMan.addProduct(product1);
+stockMan.addProduct(product2);
+stockMan.addProduct(product3);
+stockMan.addProduct(product4);
+stockMan.addProduct(product5);
+stockMan.addProduct(product6);
+stockMan.addProduct(product7);
+stockMan.addProduct(product8);
+stockMan.addProduct(product9);
+stockMan.addProduct(product10);
+product1.sellOne();
+Attempt to sell an out of stock item: Samsung Galaxy S20
+product2.sellOne();
+Attempt to sell an out of stock item: Apple iphone 12
+product3.sellOne();
+Attempt to sell an out of stock item: Google Pixel 4A
+product4.sellOne();
+Attempt to sell an out of stock item: Apple Ipad Air
+product5.sellOne();
+Attempt to sell an out of stock item: Amazon Fire HD 10
+product6.sellOne();
+Attempt to sell an out of stock item: Lenovo Yoga Smart Tab
+product7.sellOne();
+Attempt to sell an out of stock item: Onyx Book Note 2 
+product8.sellOne();
+Attempt to sell an out of stock item: ACER ACTAB1021 10
+product9.sellOne();
+Attempt to sell an out of stock item: LENOVO TAB M8
+product10.sellOne();
+Attempt to sell an out of stock item: ALLdoucube iplay 7T
+product1.increaseQuantity(10);
+product1.sellOne();
+Purchase has been succesfull: Samsung Galaxy S20
+stockMan.delivery(101, 10);
+Request for delivery has been noted: [101: Samsung Galaxy S20 stock level: 20]
+Stock List
+====================
+
+101: Samsung Galaxy S20 stock level: 0
+102: Apple iPhone 12 stock level: 0
+103: Google Pixel 4A stock level: 0
+104: Apple Ipad Air stock level: 0
+105: Amazon Fire HD 10 stock level: 0
+106: Lenovo Yoga Smart Tab stock level: 0
+107: Onyx Book Note 2 stock level: 0
+108: ACER ACTAB1021 10 stock level: 0
+109: LENOVO TAB M8 stock level: 0
+110: Alldocube iplay 7T stock level: 0
+StockDemo stockDem1 = new StockDemo(stockMan);
+

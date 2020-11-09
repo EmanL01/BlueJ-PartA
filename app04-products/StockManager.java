@@ -4,14 +4,14 @@ import java.util.ArrayList;
  * Manage the stock in a business.
  * The stock is described by zero or more Products.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author (Eman Limbu) 
+ * @version (09/11/2020)
  */
 public class StockManager
 {
     // A list of the products.
     private ArrayList<Product> stock;
-
+   
     /**
      * Initialise the stock manager.
      */
@@ -37,6 +37,8 @@ public class StockManager
      */
     public void delivery(int id, int amount)
     {
+        System.out.println(
+              "Request for delivery has been noted: " + stock );
     }
     
     /**
@@ -50,6 +52,14 @@ public class StockManager
     }
     
     /**
+     * 
+     */
+    public Product findProduct(String name)
+    {
+        return null;
+    }
+    
+    /**
      * Locate a product with the given ID, and return how
      * many of this item are in stock. If the ID does not
      * match any product, return zero.
@@ -58,21 +68,21 @@ public class StockManager
      */
     public int numberInStock(int id)
     {
-        return 0;
+      return 0;
     }
-
-    /**
+    
+     /**
      * Print details of the given product. If found,
      * its name and stock quantity will be shown.
      * @param id The ID of the product to look for.
      */
-    public void printProduct(int id)
+     public void printProduct(int id)
     {
         Product product = findProduct(id);
         
         if(product != null) 
         {
-            System.out.println(product.toString());
+         System.out.println(product);
         }
     }
     
@@ -83,7 +93,7 @@ public class StockManager
     public void printAllProducts()
     {
         System.out.println();
-        System.out.println("Peacock's Stock List");
+        System.out.println("Stock List");
         System.out.println("====================");
         System.out.println();
         

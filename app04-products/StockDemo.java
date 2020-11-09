@@ -3,8 +3,8 @@
  * The demonstration becomes properly functional as
  * the StockManager class is completed.
  * 
- * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * @author Eman Limbu
+ * @version 09/11/2020
  */
 public class StockDemo
 {
@@ -22,8 +22,15 @@ public class StockDemo
         manager.addProduct(new Product(101, "Samsung Galaxy S20"));
         manager.addProduct(new Product(102, "Apple iPhone 12"));
         manager.addProduct(new Product(103, "Google Pixel 4A"));
+        manager.addProduct(new Product(104, "Apple Ipad Air"));
+        manager.addProduct(new Product(105, "Amazon Fire HD 10"));
+        manager.addProduct(new Product(106, "Lenovo Yoga Smart Tab"));
+        manager.addProduct(new Product(107, "Onyx Book Note 2"));
+        manager.addProduct(new Product(108, "ACER ACTAB1021 10"));
+        manager.addProduct(new Product(109, "LENOVO TAB M8"));
+        manager.addProduct(new Product(110, "Alldocube iplay 7T"));
     }
-    
+   
     /**
      * Provide a very simple demonstration of how a StockManager
      * might be used. Details of one product are shown, the
@@ -57,7 +64,7 @@ public class StockDemo
             manager.printProduct(id);
         }
     }
-    
+   
     /**
      * Get the product with the given id from the manager.
      * An error message is printed if there is no match.
