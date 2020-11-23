@@ -59,3 +59,6 @@ Stock List
 110: Alldocube iplay 7T stock level: 0
 StockDemo stockDem1 = new StockDemo(stockMan);
 
+stockMan1.printlowstock();
+[101: Samsung Galaxy S20 stock level: 0]
+

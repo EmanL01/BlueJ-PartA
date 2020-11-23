@@ -13,6 +13,8 @@ public class Product
     // The quantity of this product in stock.
     private int quantity;
     
+   
+    
 
     /**
      * Constructor for objects of class Product.
@@ -81,7 +83,7 @@ public class Product
     /**
      * This is the sell product method 
      */
-    public void sellOne()
+    public void sellproduct(int howmany)
     {
         if(quantity > 0)
         {

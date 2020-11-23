@@ -82,6 +82,10 @@ public class StockManager
         
         if(product != null) 
         {
+         System.out.println("ID associated with this product doesn't exist);
+        }
+        else
+        {
          System.out.println(product);
         }
     }
