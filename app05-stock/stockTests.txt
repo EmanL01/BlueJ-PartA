@@ -1,0 +1,163 @@
+
+   {Adding 5 products}
+
+******************************
+ Stock Management Application 
+    App05: by Eman Limbu
+******************************
+
+    Add:        Add a new product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> add
+Add a new Product
+
+Please enter the name of the product
+> Samsung Galaxy S10
+Please enter the id of the product
+111
+
+Added 111: Samsung Galaxy S10 stock level: 0to the stock
+******************************
+ Stock Management Application 
+    App05: by Eman Limbu
+******************************
+
+    Add:        Add a new product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> add
+Add a new Product
+
+Please enter the name of the product
+> Samsung Galaxy S20
+Please enter the id of the product
+112
+
+Added 112: Samsung Galaxy S20 stock level: 0to the stock
+******************************
+ Stock Management Application 
+    App05: by Eman Limbu
+******************************
+
+    Add:        Add a new product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> ADD
+Add a new Product
+
+Please enter the name of the product
+> Apple iphone 11
+Please enter the id of the product
+113
+
+Added 113: Apple iphone 11 stock level: 0to the stock
+******************************
+ Stock Management Application 
+    App05: by Eman Limbu
+******************************
+
+    Add:        Add a new product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> Add
+Add a new Product
+
+Please enter the name of the product
+> Apple Iphone 12
+Please enter the id of the product
+114
+
+Added 114: Apple Iphone 12 stock level: 0to the stock
+******************************
+ Stock Management Application 
+    App05: by Eman Limbu
+******************************
+
+    Add:        Add a new product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> add
+Add a new Product
+
+Please enter the name of the product
+> Motorola G9 Plus
+Please enter the id of the product
+115
+
+Added 115: Motorola G9 Plus stock level: 0to the stock
+
+  {Add Prodcut (Blank name) Error}
+
+******************************
+ Stock Management Application 
+    App05: by Eman Limbu
+******************************
+
+    Add:        Add a new product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> add
+Add a new Product
+
+Please enter the name of the product
+>
+Error, You must name the product
+> 
+Error, You must name the product
+> 
+Error, You must name the product
+> 
+Error, You must name the product
+> 
+Error, You must name the product
+> Samsung Galaxy S30
+Please enter the id of the product
+116
+
+Added 116: Samsung Galaxy S30 stock level: 0to the stock
+
+   {Printing all the products}
+
+******************************
+ Stock Management Application 
+    App05: by Eman Limbu
+******************************
+
+    Add:        Add a new product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> printall
+
+Stock List
+====================
+
+111: Samsung Galaxy S10 stock level: 0
+112: Samsung Galaxy S20 stock level: 0
+113: Apple iphone 11  stock level: 0
+114: Apple Iphone 12 stock level: 0
+115: Motorola G9 Plus stock level: 0
+
+   {Quitting the program}
+
+******************************
+ Stock Management Application 
+    App05: by Eman Limbu
+******************************
+
+    Add:        Add a new product
+    PrintAll:   Print all products
+    Quit:       Quit the program
+
+> quit
+
+
+
+  
